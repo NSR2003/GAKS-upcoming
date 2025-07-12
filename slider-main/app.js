@@ -21,7 +21,7 @@ function showSlider() {
 const preloader = document.getElementById("preloader");
 const startTime = performance.now();
 
-window.addEventListener("load", () => {
+window.addEventListener("load", () => { 
     preloader.classList.add("hidden");
     document.body.classList.remove("hidden-content");
     document.body.classList.add("reveal-content");
