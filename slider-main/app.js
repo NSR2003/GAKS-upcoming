@@ -10,13 +10,22 @@ let refreshInterval = setInterval(() => {
 }, 5000);
 
 function showSlider() {
-    // remove old active
+    // remove old active slide
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     itemActiveOld.classList.remove('active');
 
-    // add new active
+    // remove old active description
+    let descActiveOld = document.querySelector('.slide-description .desc-item.active');
+    if (descActiveOld) descActiveOld.classList.remove('active');
+
+    // add new active slide
     items[itemActive].classList.add('active');
+
+    // add new active description
+    let descItems = document.querySelectorAll('.slide-description .desc-item');
+    if (descItems[itemActive]) descItems[itemActive].classList.add('active');
 }
+
 
 const preloader = document.getElementById("preloader");
 const startTime = performance.now();

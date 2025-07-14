@@ -3,8 +3,8 @@
 body {
     font-family: Poppins;
     margin: 0;
-    background-color: #010101;
-    color: #eee;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 svg {
@@ -118,7 +118,7 @@ header .logo {
     width: auto;
 }
 .slider .list .item.active .logo-freeduse {
-    height: 200px;
+    height: 250px;
     width: auto;
 }
 @media screen and (max-width: 678px) {
@@ -128,6 +128,37 @@ header .logo {
     .slider .list .item.active .content h1 {
         font-size: 2rem;
     }
+}
+
+
+.slide-description {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.slide-description .desc-item {
+    display: none;
+}
+
+.slide-description .desc-item.active {
+    display: block;
+}
+
+.slide-description h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.slide-description p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Preloader container */
