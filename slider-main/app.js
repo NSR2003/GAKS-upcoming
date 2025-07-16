@@ -1,3 +1,20 @@
+const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+  
+const scrollIcon = document.querySelector('.mouse-scroll');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    scrollIcon.classList.add('hidden');
+  } else {
+    scrollIcon.classList.remove('hidden');
+  }
+});
+
 let items = document.querySelectorAll('.slider .list .item');
 
 let countItem = items.length;
@@ -10,22 +27,13 @@ let refreshInterval = setInterval(() => {
 }, 5000);
 
 function showSlider() {
-    // remove old active slide
+    // remove old active
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     itemActiveOld.classList.remove('active');
 
-    // remove old active description
-    let descActiveOld = document.querySelector('.slide-description .desc-item.active');
-    if (descActiveOld) descActiveOld.classList.remove('active');
-
-    // add new active slide
+    // add new active
     items[itemActive].classList.add('active');
-
-    // add new active description
-    let descItems = document.querySelectorAll('.slide-description .desc-item');
-    if (descItems[itemActive]) descItems[itemActive].classList.add('active');
 }
-
 
 const preloader = document.getElementById("preloader");
 const startTime = performance.now();
