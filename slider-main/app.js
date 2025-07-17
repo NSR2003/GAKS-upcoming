@@ -44,3 +44,36 @@ window.addEventListener("load", () => {
     document.body.classList.add("reveal-content");
 });
 
+function equalizeHeadingHeights(selector) {
+  const elements = document.querySelectorAll(selector);
+  let maxHeight = 0;
+
+  // Reset all heights first
+  elements.forEach(el => {
+    el.style.height = 'auto';
+  });
+
+  // Find the max height
+  elements.forEach(el => {
+    const height = el.offsetHeight;
+    if (height > maxHeight) {
+      maxHeight = height;
+    }
+  });
+
+  // Set all headings to max height
+  elements.forEach(el => {
+    el.style.height = maxHeight + 'px';
+  });
+}
+
+// Run on page load
+window.addEventListener('load', () => {
+  equalizeHeadingHeights('.about-content h1');
+});
+
+// Optional: re-run on window resize
+window.addEventListener('resize', () => {
+  equalizeHeadingHeights('.about-content h1');
+});
+
