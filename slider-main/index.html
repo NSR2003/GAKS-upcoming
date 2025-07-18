@@ -13,28 +13,29 @@
         alt="Loading..."
       />
     </div>
-    
+
     <!-- header -->
-      <header>
-    <nav>
-      <div class="nav-left">
-        <div class="logo"><a href="#home">GAKS</a></div>
-      </div>
-      <div class="nav-right">
-        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-      </div>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <div class="logo"><a href="#home">GAKS</a></div>
+        </div>
+        <div class="nav-right">
+          <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
 
-      <ul class="nav-links">
-        <li><a href="#gnyan-athena">Gnyan Athena</a></li>
-        <li><a href="#shura-power">Shura Power</a></li>
-        <li><a href="#higeya-health">Higeya Health</a></li>
-        <li><a href="#freduce">Freduce</a></li>
-      </ul>
-    </nav>
-    <div class="gradient"></div>
-  </header>
+        <ul class="nav-links">
+          <li><a href="#gnyan-athena" class="scroll-link">Gnyan Athena</a></li>
+          <li><a href="#shura-power" class="scroll-link">Shura Power</a></li>
+          <li>
+            <a href="#higeya-health" class="scroll-link">Higeya Health</a>
+          </li>
+          <li><a href="#freduce" class="scroll-link">Freduce</a></li>
+        </ul>
+      </nav>
+      <div class="gradient"></div>
+    </header>
 
-    
     <!-- slider -->
     <section class="slider" id="home">
       <div class="list">
@@ -43,9 +44,9 @@
           <div class="content">
             <h1>Future of Business</h1>
             <img
-            class="logo-athena"
-            src="image/Gnyan ATHENA.png"
-            alt="Gnyan Athena Logo"
+              class="logo-athena"
+              src="image/Gnyan ATHENA.png"
+              alt="Gnyan Athena Logo"
             />
           </div>
         </div>
@@ -54,9 +55,9 @@
           <div class="content">
             <h1>Future of Fuel</h1>
             <img
-            class="logo-shura"
-            src="image/shurapower-1 (2).png"
-            alt="Shura Power Logo"
+              class="logo-shura"
+              src="image/shurapower-1 (2).png"
+              alt="Shura Power Logo"
             />
           </div>
         </div>
@@ -68,139 +69,112 @@
               class="logo-higeya"
               src="image/higeya-health-1.png"
               alt="Higeya Health Logo"
-              />
-            </div>
+            />
           </div>
-          <div class="item">
-            <img src="image/freduce-bg.jpg" />
-            <div class="content">
-              <h1>Future of Food</h1>
-              <img
+        </div>
+        <div class="item">
+          <img src="image/freduce-bg.jpg" />
+          <div class="content">
+            <h1>Future of Food</h1>
+            <img
               class="logo-freeduse"
               src="image/freeduse.png"
               alt="Freduce Logo"
-              />
-            </div>
+            />
           </div>
         </div>
-      </section>
-      <img src="./image/mouse-scroll.jpg" alt="" class="mouse-scroll">
-      
-      <!-- description -->  
-      <section class="description">
-        <div class="tablet-container"> 
-          <div class="about-gaks-container">
-            <div class="about-image">
-              <img
-              src="./image/office-bg.jpg"
-              alt="GAKS-bg"
-              class="about-logo"
-              />
-            </div>
-            <div class="about-content">
-              <h1 class="about-title">About GAKS</h1>
-              <p class="about-text">
-                GAKS is a startup company that is dedicated to revolutionizing the
-                future of business, fuel, fettle and food. We are a team of
-                passionate individuals who are committed to creating innovative
-                solutions that empower businesses and individuals to thrive in the
-                digital age.
-              </p>
-              <button>Read More <span style="margin-left: 0.5em;">&gt;</span></button>
-            </div>
-          </div>
-          <div class="about-shura-container">
-            <div class="about-image">
-              <img
-              src="./image/shura-bg.jpg"
-              alt="shura-bg"
-              class="about-logo"
-              />
-            </div>
-            <div class="about-content">
-              <h1 class="about-title">About Shura Power</h1>
-              <p class="about-text">
-                Shura Power is a startup company that is dedicated to revolutionizing the
-                future of business, fuel, fettle and food. We are a team of
-                passionate individuals who are committed to creating innovative
-                solutions that empower businesses and individuals to thrive in the
-                digital age.
-              </p>
-              <button>Read More <span style="margin-left: 0.5em;">&gt;</span></button>
-            </div>
-          </div>  
-        </div>
+      </div>
+    </section>
+    <img src="./image/mouse-scroll.jpg" alt="" class="mouse-scroll"/>
 
-         <div class="tablet-container"> 
-          <div class="about-higeya-container">
-            <div class="about-image">
-              <img
+    <!-- description -->
+    <section class="description">
+      <div class="tablet-container">
+        <div class="about-gaks-container" id="gnyan-athena">
+          <div class="about-image">
+            <img src="./image/office-bg.jpg" alt="GAKS-bg" class="about-logo" />
+          </div>
+          <div class="about-content">
+            <h1 class="about-title">About GAKS</h1>
+            <p class="about-text">
+              GAKS is a startup company that is dedicated to revolutionizing the
+              future of business, fuel, fettle and food. We are a team of
+              passionate individuals who are committed to creating innovative
+              solutions that empower businesses and individuals to thrive in the
+              digital age.
+            </p>
+            <a href="./sub-htmls/gnyan-athena.html"
+              >Read More <span style="margin-left: 0.5em">&gt;</span></a
+            >
+          </div>
+        </div>
+        <div class="about-shura-container" id="shura-power">
+          <div class="about-image">
+            <img src="./image/shura-bg.jpg" alt="shura-bg" class="about-logo" />
+          </div>
+          <div class="about-content">
+            <h1 class="about-title">About Shura Power</h1>
+            <p class="about-text">
+              Shura Power is a startup company that is dedicated to
+              revolutionizing the future of business, fuel, fettle and food. We
+              are a team of passionate individuals who are committed to creating
+              innovative solutions that empower businesses and individuals to
+              thrive in the digital age.
+            </p>
+            <a href="./sub-htmls/shura-power.html"
+              >Read More <span style="margin-left: 0.5em">&gt;</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet-container">
+        <div class="about-higeya-container" id="higeya-health">
+          <div class="about-image">
+            <img
               src="./image/health-bg.jpg"
               alt="higeya-health-bg"
               class="about-logo"
-              />
-            </div>
-            <div class="about-content">
-              <h1 class="about-title">About Higeya Health</h1>
-              <p class="about-text">
-                Higeya Health is a startup company that is dedicated to revolutionizing the
-                future of business, fuel, fettle and food. We are a team of
-                passionate individuals who are committed to creating innovative
-                solutions that empower businesses and individuals to thrive in the
-                digital age.
-              </p>
-              <button>Read More <span style="margin-left: 0.5em;">&gt;</span></button>
-            </div>
+            />
           </div>
-          <div class="about-freduce-container">
-            <div class="about-image">
-              <img
+          <div class="about-content">
+            <h1 class="about-title">About Higeya Health</h1>
+            <p class="about-text">
+              Higeya Health is a startup company that is dedicated to
+              revolutionizing the future of business, fuel, fettle and food. We
+              are a team of passionate individuals who are committed to creating
+              innovative solutions that empower businesses and individuals to
+              thrive in the digital age.
+            </p>
+            <a href="./sub-htmls/higeya-health.html"
+              >Read More <span style="margin-left: 0.5em">&gt;</span></a
+            >
+          </div>
+        </div>
+        <div class="about-freduce-container" id="freduce">
+          <div class="about-image">
+            <img
               src="./image/freduce-bg.jpg"
               alt="freduce-bg"
               class="about-logo"
-              />
-            </div>
-            <div class="about-content">
-              <h1 class="about-title">About Freduce</h1>
-              <p class="about-text">
-                Freduce is a startup company that is dedicated to revolutionizing the
-                future of business, fuel, fettle and food. We are a team of
-                passionate individuals who are committed to creating innovative
-                solutions that empower businesses and individuals to thrive in the
-                digital age.
-              </p>
-              <button>Read More <span style="margin-left: 0.5em;">&gt;</span></button>
-            </div>
-          </div>  
-        </div>  
-      </section>
-
-      <!-- <div class="slide-description">
-        <div class="desc-gnyan" id="gnyan-athena">
-          <h2>About Gnyan Athena</h2>
-          <p>
-            
-          </p>
+            />
+          </div>
+          <div class="about-content">
+            <h1 class="about-title">About Freduce</h1>
+            <p class="about-text">
+              Freduce is a startup company that is dedicated to revolutionizing
+              the future of business, fuel, fettle and food. We are a team of
+              passionate individuals who are committed to creating innovative
+              solutions that empower businesses and individuals to thrive in the
+              digital age.
+            </p>
+            <a href="./sub-htmls/freduce.html"
+              >Read More <span style="margin-left: 0.5em">&gt;</span></a
+            >
+          </div>
         </div>
-      <div class="desc-shura" id="shura-power">
-        <h2>About Shura Power</h2>
-        <p>
-          
-        </p>
       </div>
-      <div class="desc-higeya" id="higeya-health">
-        <h2>About Higeya Health</h2>
-        <p>
-          
-        </p>
-      </div>
-      <div class="desc-freduce" id="freduce">
-        <h2>About Freduce</h2>
-        <p>
-          
-        </p>
-      </div>
-    </div> -->
+    </section>
 
     <footer>
       <div class="contact-us">Contact Us</div>

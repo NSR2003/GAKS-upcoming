@@ -35,14 +35,15 @@ function showSlider() {
     items[itemActive].classList.add('active');
 }
 
-const preloader = document.getElementById("preloader");
-const startTime = performance.now();
-
 window.addEventListener("load", () => { 
+  setTimeout(() => {
+    const preloader = document.getElementById("preloader");
     preloader.classList.add("hidden");
     document.body.classList.remove("hidden-content");
     document.body.classList.add("reveal-content");
+  },2000);
 });
+
 
 function equalizeHeadingHeights(selector) {
   const elements = document.querySelectorAll(selector);

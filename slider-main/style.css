@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Poppins;
@@ -290,25 +293,6 @@ header .gradient {
     }
 }
 
-/* .slide-description {
-    width: 1200px;
-    max-width: 90dvw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    padding-top: 10dvh;
-}
-.slide-description div{
-    margin: 20px 0;
-}
-.slide-description p {
-    font-size: 1.2rem;
-    text-align: justify;
-    margin: 0;
-} */
-
 section.description {
     background-color: #ffffff;
     color: #000000;
@@ -355,20 +339,23 @@ section.description  div.about-content p{
     margin-bottom:1rem;
 }
 
-section.description  div.about-content button{
+section.description  div.about-content a{
     background-color: #000000;
     color: #ffffff;
     border:1px solid #000000;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
     margin-top: 20px;
+    transition: all 0.5s ease;
 }
 
-section.description div.about-content button:hover{
+section.description div.about-content a:hover{
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #000000;
+    transition: all 0.5s ease;
     
 }
 
@@ -472,7 +459,7 @@ section.description  div.about-image img{
     width: 100dvw; /* adjust as needed */
     height: auto;
 }
-body.hidden-content {
+body.hidden-content > *:not(#preloader){
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.5s ease;
