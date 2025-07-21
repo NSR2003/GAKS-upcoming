@@ -281,6 +281,7 @@ margin-bottom: 1.5rem;
 
 section.content-section div.content-intro div.content-heading h3{
     margin-top: 2rem;
+    text-align: center;
 }
 
 ::-webkit-scrollbar {
