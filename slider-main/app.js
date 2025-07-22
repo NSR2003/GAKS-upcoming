@@ -6,12 +6,15 @@ const menuToggle = document.querySelector('.menu-toggle');
   });
   
 const scrollIcon = document.querySelector('.mouse-scroll');
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     scrollIcon.classList.add('hidden');
+    header.classList.add('scrolled');
   } else {
     scrollIcon.classList.remove('hidden');
+    header.classList.remove('scrolled');
   }
 });
 
@@ -41,7 +44,7 @@ window.addEventListener("load", () => {
     preloader.classList.add("hidden");
     document.body.classList.remove("hidden-content");
     document.body.classList.add("reveal-content");
-  },2000);
+  },700);
 });
 
 
@@ -68,13 +71,13 @@ function equalizeHeadingHeights(selector) {
   });
 }
 
-// Run on page load
-window.addEventListener('load', () => {
-  equalizeHeadingHeights('.about-content h1');
-});
-
-// Optional: re-run on window resize
-window.addEventListener('resize', () => {
-  equalizeHeadingHeights('.about-content h1');
-});
+addEventListener('resize', () => {
+  if(window.innerWidth < 960){
+    equalizeHeadingHeights('.about-content h1');
+  }else{
+    document.querySelectorAll('.about-content h1').forEach(el => {
+    el.style.height = 'auto';  
+    })
+  }
+})
 
