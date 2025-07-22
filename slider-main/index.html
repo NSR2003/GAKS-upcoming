@@ -1,189 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GAKS</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="hidden-content">
-    <div id="preloader">
-      <img
-        src="image/original-9cc179b4a4e8ea33a704cee0e0352067.gif"
-        alt="Loading..."
-      />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAKS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="hidden-content">
+  <div id="preloader">
+    <img src="image/original-9cc179b4a4e8ea33a704cee0e0352067.gif" alt="Loading..." />
+  </div>
+
+  <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <div class="logo"><a href="#home">GAKS</a></div>
+      </div>
+      <div class="nav-right">
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#gnyan-athena" class="scroll-link">Gnyan Athena</a></li>
+        <li><a href="#shura-power" class="scroll-link">SHURAPower</a></li>
+        <li>
+          <a href="#higeya-health" class="scroll-link">Higeya Health</a>
+        </li>
+        <li><a href="#freduce" class="scroll-link">Freduce</a></li>
+      </ul>
+    </nav>
+    <div class="gradient"></div>
+  </header>
+
+  <!-- slider -->
+  <section class="slider" id="home">
+    <div class="list">
+      <div class="item active">
+        <img src="image/office-bg.jpg" />
+        <div class="content">
+          <h1>Future of Business</h1>
+          <img class="logo-athena" src="image/Gnyan ATHENA.png" alt="Gnyan Athena Logo" />
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/shura-bg.jpg" />
+        <div class="content">
+          <h1>Future of Fuel</h1>
+          <img class="logo-shura" src="image/shurapower-1 (2).png" alt="SHURAPower Logo" />
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/health-bg.jpg" />
+        <div class="content">
+          <h1>Future of Fettle</h1>
+          <img class="logo-higeya" src="image/higeya-health-1.png" alt="Higeya Health Logo" />
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/freduce-bg.jpg" />
+        <div class="content">
+          <h1>Future of Food</h1>
+          <img class="logo-freeduse" src="image/freeduse.png" alt="Freduce Logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./image/mouse-scroll.jpg" alt="" class="mouse-scroll" />
+
+  <!-- description -->
+  <section class="description">
+    <div class="tablet-container">
+      <div class="about-gaks-container" id="gnyan-athena">
+        <div class="about-image">
+          <img src="./image/office-bg.jpg" alt="GAKS-bg" class="about-logo" />
+        </div>
+        <div class="about-content">
+          <h1 class="about-title">GAKS</h1>
+          <p class="about-text">
+            Enabling a smarter, greener future by innovating with knowledge. GAKS provides its strategic solutions in
+            the areas of sustainable mobility, clean nutrition, and healthcare. Our mission: Making Earth Green Again-by
+            changing infrastructure with insight. Learn how we can use knowledge to create a competitive advantage in
+            innovative organizations that are interested in sustainability and intelligent development.
+          </p>
+          <a href="./sub-htmls/gnyan-athena.html">Read More <span style="margin-left: 0.5em">&gt;</span></a>
+        </div>
+      </div>
+      <div class="about-shura-container" id="shura-power">
+        <div class="about-image">
+          <img src="./image/shura-bg.jpg" alt="shura-bg" class="about-logo" />
+        </div>
+        <div class="about-content">
+          <h1 class="about-title">SHURA Power</h1>
+          <p class="about-text">
+            SHURA Power transforms EV charging by using solar-wind hybrid stations, which are charged with 100 percent
+            renewable energy. We provide tech-enabled and sustainable charging experiences that include fast chargers,
+            Battery Energy Storage, and cafe-style lounges. SHURA redefines mobility, by making EV charging clean,
+            reliable, and fun- one charge at a time, driving the green transport revolution in India.
+          </p>
+          <a href="./sub-htmls/shura-power.html">Read More <span style="margin-left: 0.5em">&gt;</span></a>
+        </div>
+      </div>
     </div>
 
-    <!-- header -->
-    <header>
-      <nav>
-        <div class="nav-left">
-          <div class="logo"><a href="#home">GAKS</a></div>
+    <div class="tablet-container">
+      <div class="about-higeya-container" id="higeya-health">
+        <div class="about-image">
+          <img src="./image/health-bg.jpg" alt="higeya-health-bg" class="about-logo" />
         </div>
-        <div class="nav-right">
-          <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-        </div>
-
-        <ul class="nav-links">
-          <li><a href="#gnyan-athena" class="scroll-link">Gnyan Athena</a></li>
-          <li><a href="#shura-power" class="scroll-link">Shura Power</a></li>
-          <li>
-            <a href="#higeya-health" class="scroll-link">Higeya Health</a>
-          </li>
-          <li><a href="#freduce" class="scroll-link">Freduce</a></li>
-        </ul>
-      </nav>
-      <div class="gradient"></div>
-    </header>
-
-    <!-- slider -->
-    <section class="slider" id="home">
-      <div class="list">
-        <div class="item active">
-          <img src="image/office-bg.jpg" />
-          <div class="content">
-            <h1>Future of Business</h1>
-            <img
-              class="logo-athena"
-              src="image/Gnyan ATHENA.png"
-              alt="Gnyan Athena Logo"
-            />
-          </div>
-        </div>
-        <div class="item">
-          <img src="image/shura-bg.jpg" />
-          <div class="content">
-            <h1>Future of Fuel</h1>
-            <img
-              class="logo-shura"
-              src="image/shurapower-1 (2).png"
-              alt="Shura Power Logo"
-            />
-          </div>
-        </div>
-        <div class="item">
-          <img src="image/health-bg.jpg" />
-          <div class="content">
-            <h1>Future of Fettle</h1>
-            <img
-              class="logo-higeya"
-              src="image/higeya-health-1.png"
-              alt="Higeya Health Logo"
-            />
-          </div>
-        </div>
-        <div class="item">
-          <img src="image/freduce-bg.jpg" />
-          <div class="content">
-            <h1>Future of Food</h1>
-            <img
-              class="logo-freeduse"
-              src="image/freeduse.png"
-              alt="Freduce Logo"
-            />
-          </div>
+        <div class="about-content">
+          <h1 class="about-title">Higeya Health</h1>
+          <p class="about-text">
+            Higeya Health is a combination of sophisticated diagnostics and holistic health care at an affordable price
+            and accessible locations. Our preventive healthcare enables individuals through remote imaging hospitals and
+            natural fitness studios. In tier-2 cities and urban centres, Higeya is revolutionizing the way India is
+            getting strong, healthy, and resilient. Heal smarter. Live stronger. Choose Higeya.
+          </p>
+          <a href="./sub-htmls/higeya-health.html">Read More <span style="margin-left: 0.5em">&gt;</span></a>
         </div>
       </div>
-    </section>
-    <img src="./image/mouse-scroll.jpg" alt="" class="mouse-scroll"/>
-
-    <!-- description -->
-    <section class="description">
-      <div class="tablet-container">
-        <div class="about-gaks-container" id="gnyan-athena">
-          <div class="about-image">
-            <img src="./image/office-bg.jpg" alt="GAKS-bg" class="about-logo" />
-          </div>
-          <div class="about-content">
-            <h1 class="about-title">About GAKS</h1>
-            <p class="about-text">
-              GAKS is a startup company that is dedicated to revolutionizing the
-              future of business, fuel, fettle and food. We are a team of
-              passionate individuals who are committed to creating innovative
-              solutions that empower businesses and individuals to thrive in the
-              digital age.
-            </p>
-            <a href="./sub-htmls/gnyan-athena.html"
-              >Read More <span style="margin-left: 0.5em">&gt;</span></a
-            >
-          </div>
+      <div class="about-freduce-container" id="freduce">
+        <div class="about-image">
+          <img src="./image/freduce-bg.jpg" alt="freduce-bg" class="about-logo" />
         </div>
-        <div class="about-shura-container" id="shura-power">
-          <div class="about-image">
-            <img src="./image/shura-bg.jpg" alt="shura-bg" class="about-logo" />
-          </div>
-          <div class="about-content">
-            <h1 class="about-title">About Shura Power</h1>
-            <p class="about-text">
-              Shura Power is a startup company that is dedicated to
-              revolutionizing the future of business, fuel, fettle and food. We
-              are a team of passionate individuals who are committed to creating
-              innovative solutions that empower businesses and individuals to
-              thrive in the digital age.
-            </p>
-            <a href="./sub-htmls/shura-power.html"
-              >Read More <span style="margin-left: 0.5em">&gt;</span></a
-            >
-          </div>
+        <div class="about-content">
+          <h1 class="about-title">Freduce</h1>
+          <p class="about-text">
+            FREDUCE sells hydroponic, ultra-fresh vegetables that are available within 24 hours of harvest. Our clean
+            produce is grown with no soil or pesticides and fulfills the daily requirements of the Indian kitchens.
+            Supported by nutritionists, FREDUCE advocates healthy eating through fast, Ready-To-Eat meals, and makes
+            clean food convenient, sustainable, and smart. Eat fresh. Live well. Think FREDUCE.
+          </p>
+          <a href="./sub-htmls/freduce.html">Read More <span style="margin-left: 0.5em">&gt;</span></a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="tablet-container">
-        <div class="about-higeya-container" id="higeya-health">
-          <div class="about-image">
-            <img
-              src="./image/health-bg.jpg"
-              alt="higeya-health-bg"
-              class="about-logo"
-            />
-          </div>
-          <div class="about-content">
-            <h1 class="about-title">About Higeya Health</h1>
-            <p class="about-text">
-              Higeya Health is a startup company that is dedicated to
-              revolutionizing the future of business, fuel, fettle and food. We
-              are a team of passionate individuals who are committed to creating
-              innovative solutions that empower businesses and individuals to
-              thrive in the digital age.
-            </p>
-            <a href="./sub-htmls/higeya-health.html"
-              >Read More <span style="margin-left: 0.5em">&gt;</span></a
-            >
-          </div>
-        </div>
-        <div class="about-freduce-container" id="freduce">
-          <div class="about-image">
-            <img
-              src="./image/freduce-bg.jpg"
-              alt="freduce-bg"
-              class="about-logo"
-            />
-          </div>
-          <div class="about-content">
-            <h1 class="about-title">About Freduce</h1>
-            <p class="about-text">
-              Freduce is a startup company that is dedicated to revolutionizing
-              the future of business, fuel, fettle and food. We are a team of
-              passionate individuals who are committed to creating innovative
-              solutions that empower businesses and individuals to thrive in the
-              digital age.
-            </p>
-            <a href="./sub-htmls/freduce.html"
-              >Read More <span style="margin-left: 0.5em">&gt;</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="infnite-loop">
+    <div class="scroller" data-direction="left" data-speed="fast">
+      <ul class="tag-list scroller__inner">
+        <li><span>Shu Ra Power -</span> Green power soulutions</li>
+        <li><span>Refuelation -</span> Free EV charging stations on Highways</li>
+        <li><span>Tasty Temple -</span> Affordable South Indian Restaurants</li>
+        <li><span>Freduce -</span> Green Fresh vegitables</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="contact-us">Contact Us</div>
+    <p>
+      4th Floor, Veer Chambers (IDFC Building), Prakash Nagar, Hyderabad,
+      Telangana
+    </p>
+    <p> <strong>Phone:</strong><a href="tel:+91 9030008866">+91 9030008866</a></p>
+    <p> <strong>Email:</strong> <a href="mailto:info@gaksathena.com">info@gaksathena.com</a></p>
+  </footer>
 
-    <footer>
-      <div class="contact-us">Contact Us</div>
-      <p>
-        4th Floor, Veer Chambers (IDFC Building), Prakash Nagar, Hyderabad,
-        Telangana
-      </p>
-    </footer>
-
-    <script src="app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>

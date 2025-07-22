@@ -5,12 +5,12 @@ const menuToggle = document.querySelector('.menu-toggle');
     navLinks.classList.toggle('show');
   });
   
-const scrollIcon = document.querySelector('.mouse-scroll');
+const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
-    scrollIcon.classList.add('hidden');
+    header.classList.add('scrolled');
   } else {
-    scrollIcon.classList.remove('hidden');
+    header.classList.remove('scrolled');
   }
 });
