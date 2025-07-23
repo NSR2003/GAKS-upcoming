@@ -148,8 +148,7 @@ header .gradient {
         transform: translateY(-50px);
         opacity: 0;
         pointer-events: none;
-        transition: all 0.6s ease;
-        border-radius: 70;
+        transition: all 0.6s ease; 
     }
 
     .nav-links.show {
@@ -190,7 +189,12 @@ header .gradient {
     .logo {
         flex: 1;
     }
-
+    .nav-links li a{
+       color: whitesmoke;
+    } 
+    .nav-links li a:hover{
+        color: #000000;
+    }
 }
 @media (max-width: 512px) {
     .mouse-scroll{
