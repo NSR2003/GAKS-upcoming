@@ -181,7 +181,7 @@ header .gradient {
         font-size: 2rem;
         background: none;
         border: none;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
         /* padding-inline-end: 0px; */
         z-index: 100; /* ensure it's on top */
