@@ -446,6 +446,59 @@ section.description  div.about-image img{
 }
 
 
+.marqee{
+    display: flex;
+    overflow: hidden;
+    position:relative;
+    gap:1rem;
+    user-select: none;
+    color: #000000;
+}
+.marqee__inner{
+    display: flex;
+    flex-shrink: 0;
+    gap:1rem;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 100%;
+    padding-inline-start: 0px;
+    animation: scroll 20s linear infinite;
+}
+.marqee__inner li{
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px #000000;
+    padding:10px 20px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 1rem));
+    }
+    
+}
+.marqee__inner li span{
+font-size: 1.2rem;
+font-weight: bold;
+}
+.gaks-marqee{
+    color:#12a1e4;
+}
+.shura-power-marqee{
+    color:#00c951;
+}
+.higeya-health-marqee{
+    color:#1eebe4;
+}
+.freduce-marqee{
+    color:#ffc003;
+}
+
+
 /* Preloader container */
 #preloader {
     position: fixed;
@@ -501,6 +554,6 @@ footer p a{
 }
 
 ::-webkit-scrollbar{
-    width: 0px;
-    height: 0px
+    width:0px;
+    height:0px
 }
