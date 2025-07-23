@@ -135,7 +135,7 @@ header .gradient {
     .nav-links {
         position: absolute;
         top: 120%;
-        left: 0;
+        left: 5dvw;
         width: 90dvw;
         display: flex;
         flex-direction: column;
