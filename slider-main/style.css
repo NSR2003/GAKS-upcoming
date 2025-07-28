@@ -549,8 +549,11 @@ footer .contact-us{
     margin-bottom: 10px;
 }
 footer p a{
-    text-decoration: underline;
+    text-decoration: none;
     color: #000000;
+}
+footer p a.email-link{
+    text-decoration: underline;
 }
 
 ::-webkit-scrollbar{
