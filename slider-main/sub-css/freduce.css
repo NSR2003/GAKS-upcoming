@@ -377,6 +377,26 @@ section.content-section div.content-intro div.content-heading h3{
         text-align: start;
     }
 }
+footer{
+    text-align: center;
+    background: #ffffff 50%;
+    color: #000000;
+    padding: 20px;
+    font-family: 'poppins';
+    font-size: 1rem;
+}
+footer .contact-us{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer p a{
+    text-decoration: none;
+    color: #000000;
+}
+footer p a.email-link{
+    text-decoration: underline;
+}
 ::-webkit-scrollbar {
     width: 0px;
   }
