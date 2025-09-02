@@ -535,24 +535,47 @@ body.reveal-content {
     transition: opacity 0.5s ease;
 }
 
-footer{
-    text-align: center;
-    background: #ffffff 50%;
+footer{ 
+    width: 100dvw;
     color: #000000;
     padding: 20px;
     font-family: 'poppins';
     font-size: 1rem;
 }
 footer .contact-us{
+    text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
-footer p a{
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90dvw;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+}
+.footer-left{
+    width:50%;
+}
+.footer-right{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.footer-left p a{
     text-decoration: none;
     color: #000000;
 }
-footer p a.email-link{
+.footer-left p a.email-link{
     text-decoration: underline;
 }
 
