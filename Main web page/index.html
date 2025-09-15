@@ -170,16 +170,31 @@
         <p> <strong>Phone:</strong><a>+91 9030008866</a></p>
       </div>
       <div class="footer-right">
-        <form action="">
-          <input type="text" placeholder="Enter your name" />
-          <input type="email" placeholder="Enter your email" />
-          <input type="text" placeholder="Enter your message">
-          <button type="submit">Contact Us</button>
+        <form action="" id="contact-form">
+          <div class="contact-part1">
+            <div class="contact-name-div">
+              <label for="name">Name:</label>
+              <input name="name" type="text" placeholder="Enter your name" id="name" required />
+            </div>
+            <div class="contact-email-div">
+              <label for="email">Email:</label>
+              <input name="email" type="email" placeholder="Enter your email" id="email" required />
+            </div>
+          </div>
+          <div class="contact-part2">
+            <div class="contact-message-div">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="6"></textarea>
+            </div>
+            <button type="submit">Contact Us</button>
+          </div>
         </form>
+        <p id="form-response"></p>
       </div>
     </div>
   </footer>
   <link rel="stylesheet" href="./style.css"/>
   <script src="app.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
